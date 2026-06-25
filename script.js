@@ -355,7 +355,6 @@ const countryCodes = {
 "uruguay":"UY",
 "venezuela":"VE"
 };
-};
 
 document.getElementById("countryBtn").onclick=()=>{
 
