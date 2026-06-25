@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limon Tools</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Limon Tools</h1>
+    <p class="subtitle">
+        Smart Number & Country Code Manager
+    </p>
+
+    <!-- Number Box -->
+    <textarea
+        id="numbers"
+        placeholder="Paste numbers here... One number per line">
+    </textarea>
+
+    <!-- Buttons -->
+    <div class="buttons">
+
+        <button id="copyBtn">
+            📋 Copy First Number
+        </button>
+
+        <button id="clearBtn">
+            🗑 All Clear
+        </button>
+
+        <button id="importBtn">
+            📂 Import TXT
+        </button>
+
+        <button id="exportBtn">
+            💾 Export TXT
+        </button>
+
+    </div>
+
+    <input
+        type="file"
+        id="fileInput"
+        accept=".txt"
+        hidden>
+
+    <!-- Counter -->
+    <div class="counter">
+
+        <div class="card">
+            <span id="total">0</span>
+            <small>Total</small>
+        </div>
+
+        <div class="card">
+            <span id="copied">0</span>
+            <small>Copied</small>
+        </div>
+
+        <div class="card">
+            <span id="remaining">0</span>
+            <small>Remaining</small>
+        </div>
+
+    </div>
+
+    <!-- Country Finder -->
+    <h2>🌍 Country Finder</h2>
+
+    <input
+        type="text"
+        id="countryInput"
+        placeholder="Enter Country Name">
+
+    <button id="countryBtn">
+        Find Country Code
+    </button>
+
+    <div id="countryResult"></div>
+
+    <!-- History -->
+    <h2>📜 Copy History</h2>
+
+    <div id="history">
+
+        No copied numbers yet.
+
+    </div>
+
+    <button id="clearHistory">
+        Clear History
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
